@@ -1,0 +1,32 @@
+{
+    "manifest_version": 3,
+    "name": "MediaHarbor",
+    "version": "1.0",
+    "description": "Calls mediaharbor:// protocol to launch MediaHarbor app with download options",
+    "permissions": ["tabs", "activeTab"],
+    "host_permissions": [
+        "*://*.youtube.com/*",
+        "*://music.youtube.com/*",
+        "*://*.spotify.com/*",
+        "*://*.tidal.com/*",
+        "*://*.deezer.com/*",
+        "*://*.qobuz.com/*",
+        "*://*.apple.com/*",
+        "*://itunes.apple.com/*"
+    ],
+    "icons": {
+        "16": "icons/icon-16.png",
+        "48": "icons/icon-48.png",
+        "128": "icons/icon-128.png"
+    },
+    "action": {
+        "default_title": "Download with MH",
+        "default_popup": "pop-up.html"
+    },
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "mediaharbor@extension.local",
+            "strict_min_version": "109.0"
+        }
+    }
+}
